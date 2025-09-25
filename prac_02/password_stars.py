@@ -1,4 +1,3 @@
-
 def main():
     length_of_password = 8
     password = get_password(length_of_password)
