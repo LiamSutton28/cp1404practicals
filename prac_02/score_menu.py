@@ -25,6 +25,8 @@ def main():
             print(determine_score_result(score))
         elif choice == "S":
             print_stars(score)
+        print(MENU)
+        choice = input(">> ").upper()
     print("Farewell")
 
 
@@ -43,5 +45,6 @@ def determine_score_result(score):
         return "Passable"
     else:
         return "Bad"
+
 
 main()
