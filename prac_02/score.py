@@ -7,13 +7,13 @@ import random
 
 def main():
     score = float(input("Enter score: "))
-    print(find_score_result(score))
+    print(determine_score_result(score))
     random_number = random.randint(0, 100)
     print(random_number)
-    print(find_score_result(random_number))
+    print(determine_score_result(random_number))
 
 
-def find_score_result(score):
+def determine_score_result(score):
     if score < 0 or score > 100:
         return "Invalid score"
     elif score >= 90:
