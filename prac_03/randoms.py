@@ -11,3 +11,5 @@ print(random.uniform(2.5, 5.5))  # line 3
  - I saw a random odd number between and including 3 and 9. It could not have produced a 4 as it is even
  - I saw a decimal between 2.5 and 5.5 but not including them
 """
+
+print(random.randint(0, 100))
