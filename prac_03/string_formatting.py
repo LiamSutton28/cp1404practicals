@@ -38,6 +38,8 @@ print(f"{year} {name} for about ${cost:,.0f}!")
 
 # TODO: Using a for loop with the range function and f-string formatting,
 # produce the following right-aligned output (DO NOT use a list):
+for i in range(11):
+    print(f"2 ^{i:>2} is{2 ** i:>5}")
 # 2 ^ 0 is    1
 # 2 ^ 1 is    2
 # 2 ^ 2 is    4
