@@ -3,7 +3,13 @@
 FILENAME = "name.txt"
 
 # 1
-name = input("Name: ")
+provided_name = input("Name: ")
 out_file = open(FILENAME, 'w')
-print(name, file=out_file)
+print(provided_name, file=out_file)
 out_file.close()
+
+# 2
+infile = open(FILENAME)
+found_name = infile.readline().strip()
+print(f"Hi {found_name}")
+infile.close()
