@@ -12,4 +12,4 @@ print(random.uniform(2.5, 5.5))  # line 3
  - I saw a decimal between 2.5 and 5.5 but not including them
 """
 
-print(random.randint(0, 100))
+print(random.randint(1, 100))
