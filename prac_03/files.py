@@ -19,3 +19,11 @@ with open("numbers.txt") as in_file:
     number1 = int(in_file.readline())
     number2 = int(in_file.readline())
 print(number1 + number2)
+
+#4
+sum_of_all_lines = 0
+with open("numbers.txt") as in_file:
+    for line in in_file:
+        number = int(line)
+        sum_of_all_lines += number
+print(sum_of_all_lines)
