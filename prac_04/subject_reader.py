@@ -12,6 +12,7 @@ def main():
 
 
 def print_subject_details(records: list):
+    """Print data from the nested list as 'Subject is taught by Teacher and has Number students'"""
     for record in records:
         print(f"{record[0]} is taught by {record[1]} and has {record[2]} students")
 
