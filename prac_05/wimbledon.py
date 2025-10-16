@@ -1,7 +1,7 @@
 """
 Wimbledon
 Estimate: 50 minutes
-Actual:   todo minutes
+Actual:   40 minutes
 """
 from os.path import split
 
