@@ -40,7 +40,16 @@ def main():
         elif choice == "A":
             pass
         elif choice == "U":
-            pass
+            for i, project in enumerate(projects):
+                print(f"{i} {project}")
+            project_number = int(input("Project choice: "))
+            print(projects[project_number])
+            new_percentage = int(input("New Percentage: "))
+            if new_percentage != "":
+                projects[project_number].completion_percentage = new_percentage
+            new_priority = int(input("New Priority: "))
+            if new_priority != "":
+                projects[project_number].priority = new_priority
         print(MENU)
         choice = input(">>> ").upper()
 
