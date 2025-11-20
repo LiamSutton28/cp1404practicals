@@ -19,23 +19,33 @@ def main():
             if not current_taxi:
                 print("You need to choose a taxi before you can drive")
             else:
-                distance = int(input("Drive how far? "))
-                current_taxi.start_fare()
-                current_taxi.drive(distance)
-                print(f"Your {current_taxi.name} trip cost you ${current_taxi.get_fare():,.2f}")
+                drive_taxi(current_taxi)
                 total_fare += current_taxi.get_fare()
+                print(f"Your {current_taxi.name} trip cost you ${current_taxi.get_fare():,.2f}")
         else:
             print("Invalid option")
         print(f"Bill to date: ${total_fare:,.2f}")
         print(MENU)
         choice = input(">>> ").lower()
+    display_farewell_summary(total_fare)
+
+
+def display_farewell_summary(total_fare: int):
+    """Display farewell summary of all taxis."""
     print(f"Total trip cost: ${total_fare:,.2f}")
     print(f"Taxis are now:")
     display_taxis()
 
 
+def drive_taxi(current_taxi: Taxi | SilverServiceTaxi):
+    """Drive current taxi the unput distance."""
+    distance = int(input("Drive how far? "))
+    current_taxi.start_fare()
+    current_taxi.drive(distance)
+
 
 def change_taxi():
+    """Change current taxi if valid."""
     try:
         taxi_index = int(input("Choose taxi: "))
         return taxis[taxi_index]
@@ -44,6 +54,7 @@ def change_taxi():
 
 
 def display_taxis():
+    """Display all the Taxis."""
     for i, car in enumerate(taxis):
         print(f"{i} - {car}")
 
