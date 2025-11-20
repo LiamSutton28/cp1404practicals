@@ -5,6 +5,7 @@ from prac_09.taxi import Taxi
 taxis = [Taxi("Prius", 100), SilverServiceTaxi("Limo", 100, 2), SilverServiceTaxi("Hummer", 200, 4)]
 MENU = """q)uit, c)hoose taxi, d)rive"""
 
+
 def main():
     """User interface for taxis"""
     current_taxi = None
