@@ -38,7 +38,6 @@ def run_tests():
     car = Car()
     assert car._odometer == 0, "Car does not set odometer correctly"
 
-    # TODO: 2. write assert statements to show if Car sets the fuel correctly
     # Note that Car's __init__ function sets the fuel in one of two ways:
     # using the value passed in or the default
     # You should test both of these
@@ -56,7 +55,6 @@ doctest.testmod()
 
 # (Don't change the tests, change the function!)
 
-# TODO: 5. Write and test a function to format a phrase as a sentence,
 # starting with a capital and ending with a single full stop.
 # Important: start with a function header and just use pass as the body
 def create_sentence(string: str):
